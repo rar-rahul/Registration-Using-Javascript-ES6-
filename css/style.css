@@ -1,0 +1,78 @@
+/**All Custom Css Here**/
+
+/**Width and height of frontpanel**/
+.w-panel {
+    width: 30%;
+    height: 300px;
+    border: 4px solid #ccc;
+}
+
+.modal-width {
+    width: 55% !important;
+    left: 92px;
+    border: 3px solid #000;
+}
+
+.head-title {
+    border-bottom: 3px solid #87CEEB;
+    color: #87CEEB;
+}
+
+.bg-field {
+    background-color: #ccc;
+}
+
+.bg-err {
+    color: #ff0000;
+}
+
+/* social icons css*/
+.social-network {
+    list-style: none;
+    display: inline;
+    margin-left: 0 !important;
+    padding: 0;
+}
+
+.social-network li {
+    display: inline;
+    margin: 0 5px;
+}
+
+/* social icons background color css */
+.icoFacebook {
+    background-color: #3B5998;
+}
+
+.icoTwitter {
+    background-color: #33ccff;
+}
+
+.icoGoogle {
+    background-color: #BD3518;
+}
+
+.social-circle li a {
+    display: inline-block;
+    position: relative;
+    margin: 0 auto 0 auto;
+    border-radius: 50%;
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+}
+
+.social-circle li i {
+    margin: 0;
+    line-height: 40px;
+    text-align: center;
+}
+
+.social-circle i {
+    color: #fff;
+}
+
+/*End Social Icon Css*/
+
+/**CSS end here**/

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Registration Using Javascript(ES6)</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <!--Start Container-->
+    <div class="container pt-3">
+        <div class="w-panel m-auto p-2 pb-3 mt-50">
+            <h4 class=" text-center p-2 head-title">Software Solution</h4>
+            <div class="text-center mt-3 mb-3 pb-3">
+                <button type="button" class="btn btn-primary" id="login-btn">Login</button><br>
+                <button type="button" class="btn btn-outline-primary mt-2" id="register-btn">Register</button>
+            </div>
+        </div>
+        <!--Customer Modal Start-->
+        <div class="modal fade modal-border" tabindex="-1" role="dialog" id="modal">
+            <div class="modal-dialog pt-50">
+                <div class="modal-content modal-width">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Register With</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="col-md-12 text-center mt-2">
+                        <ul class="social-network social-circle ">
+                            <li><a href="#" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#" class="icoTwitter" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#" class="icoGoogle" title="Google +"><i class="fa fa-google-plus"></i></a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <p class="text-center mt-2">Or</p>
+                    </div>
+                    <!--Register Form Here-->
+                    <form action="#" method="post" id="register">
+                        <div class="modal-body">
+                            <span class="err text-center bg-err" id="err"></span>
+                            <div class="col-md-12">
+                                <input type="email" name="email" id="email" class="form-control bg-field" placeholder="Email" />
+                                <input type="password" name="password" id="password" class="form-control bg-field mt-2" placeholder="Password" />
+                                <input type="password" name="conf-password" id="conf-password" class="form-control bg-field mt-2" placeholder="Repeat Password" />
+                                <input type="submit" name="submit" id="submit" class="form-control mt-2 btn btn-primary btn-block" value="Create Account" />
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <p>Already have an account ? <a href="#" class="login-link">Login</a></p>
+                        </div>
+                    </form>
+                    <!--Register End Here-->
+                    <!--Login Form Start Here-->
+                    <form action="#" method="post" id="login" class="login">
+                        <div class="modal-body">
+                            <div class="col-md-12">
+                                <input type="email" class="form-control bg-field email" placeholder="Email" />
+                                <input type="password" class="form-control bg-field mt-2 password" placeholder="Password" />
+                                <input type="submit" class="form-control mt-2 btn btn-primary" value="Login" />
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <p>Looking to <a href="#" class="register-link"> create an account ?</a></p>
+                        </div>
+                    </form>
+                    <!--Login End Here-->
+                </div>
+            </div>
+        </div>
+        <!--Modal End Here-->
+        <hr>
+        
+        <input type="text" id="myInput" class="form-control col-md-3" placeholder="Search here..">
+        <!--Registered User List Start-->
+        <table class="table table-striped mt-2 border" id="userTable">
+            <thead>
+                <tr>
+                    <th>Sr</th>
+                    <th>Email</th>
+                    <th>Password</th>
+                    <th>Edit /Delete</th>
+                </tr>
+            </thead>
+            <tbody id="user-list">
+            </tbody>
+        </table>
+        <!--User List End-->
+    </div>
+    <!--Container End-->
+    <!--All Js Here-->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!--Custom Js-->
+    <script src="js/main.js"></script>
+    <script src="js/script.js"></script>
+    <!--Js End-->
+</body>
+
+</html>
